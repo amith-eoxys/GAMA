@@ -1,0 +1,36 @@
+/**
+* Name: new
+* Author: amithu
+* Description: Describe here the model and its experiments
+* Tags: Tag1, Tag2, TagN
+*/
+
+model obj_loading   
+
+global {
+
+	init { 
+		create object;
+	}  
+} 
+
+species object skills:[moving]{
+	
+	geometry shape <- obj_file("../includes/teapot.obj") as geometry;
+	
+	reflex move{
+		do wander;
+	}
+	aspect obj {
+		draw shape;
+	}
+			
+}	
+
+experiment Display  type: gui {
+	output {
+		display complex  background:#gray type: opengl{
+		  species object aspect:obj;				
+		}
+	}
+}
