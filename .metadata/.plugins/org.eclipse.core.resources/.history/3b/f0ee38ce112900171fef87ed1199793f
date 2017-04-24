@@ -111,8 +111,8 @@ experiment test_code type: gui {
 				draw sphere(2 * 10) at: first(target_point) color: #green;
 				draw sphere(2* 10) at: ((target_point) at 1) color: #red;
 				draw sphere(2* 10) at: ((target_point) at 2) color: #blue;
-				draw sphere(2* 10) at: ((target_point) at 3) color: #dimgray;
-				draw sphere(2* 10) at: ((target_point) at 4) color: #yellow;
+				draw sphere(2* 10) at: ((target_point) at 4) color: #dimgray;
+				draw sphere(2* 10) at: ((target_point) at 1) color: #yellow;
 				}
 			}
 		}

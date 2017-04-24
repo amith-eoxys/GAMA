@@ -15,7 +15,7 @@ global {
 	int nb_cols <- 50;
 	int nb_rows <- 50;
 	
-	list target_point <- [{100,200,0},{700,150,0},{700,600,0},{100,600,0},{850,550,0}];
+	list target_point <- [{100,200,0},{700,150,0},{700,600,0},{100,600,0}];
 	//Shape of the world initialized as the bounding box around the walls
 	geometry shape <- envelope(wall_shapefile);
 	
@@ -66,12 +66,12 @@ species people skills: [moving]{
 	//Evacuation point
 	bool is_target;
 	bool is_exit;
-	point target <- target_point at rnd(4);
+	point target <- target_point at rnd(3);
 	rgb color <- rnd_color(255);
 	
 	reflex goto_other_target when: target = nil {
 		
-		target <- target_point at rnd(4)	;
+		target <- target_point at rnd(3)	;
 		
 }
 	//Reflex to move the agent 
@@ -112,7 +112,6 @@ experiment test_code type: gui {
 				draw sphere(2* 10) at: ((target_point) at 1) color: #red;
 				draw sphere(2* 10) at: ((target_point) at 2) color: #blue;
 				draw sphere(2* 10) at: ((target_point) at 3) color: #dimgray;
-				draw sphere(2* 10) at: ((target_point) at 4) color: #yellow;
 				}
 			}
 		}
