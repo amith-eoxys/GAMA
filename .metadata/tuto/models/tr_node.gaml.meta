@@ -1,0 +1,10 @@
+#
+#Fri Apr 28 10:31:03 IST 2017
+operators=envelope~-~contains~index_of~as~neighbors_of~.~flip~+~\=~circle~one_of
+plugins=msi.gama.core~ummisco.gama.java2d
+statements=action~arg~if~return~let~loop~set~init~add~aspect~else~draw~create~reflex~ask~do~output~display~display_population
+skills=reflex
+constants=red~yellow~green~blue
+species=graph_node~base_edge
+types=geometry~string~list~int~unknown~point~agent~rgb~float~bool~date~container~graph
+actions=debug~error~tell~write~die~_init_~_step_~halt~pause
